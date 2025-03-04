@@ -1,0 +1,13 @@
+.sign-up-selected{
+    transform: translateX(-524px);
+
+    /* left: -524px */
+}
+
+.sign-in-selected{
+    /* right: 512px; */
+        transform: translateX(524px);
+        
+}
+
+

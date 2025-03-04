@@ -1,0 +1,238 @@
+ .main-header{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    gap: 24px;
+
+    span{
+        color: #fff;
+    }
+
+    button{
+
+        font-size: 16px;
+        font-weight: 550;
+        color: #fff;
+        border: none;
+        background-color: transparent;
+
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    h1{
+        color: #fff;
+        font-weight: 400;
+        font-size: 34px;
+    }
+    
+}
+
+
+
+main{
+    width: 100%;
+    min-width: none;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    left: 24px;
+    gap: 32px;
+
+    grid-area: main;
+
+    section{
+        height: 100%;
+        max-width: 530px;
+        
+        /* position: relative; */
+        z-index: 0;
+        
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(
+            2, minmax(500px, 1fr)
+        );
+        align-items: center;
+
+
+        gap: 24px;
+
+        /* display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: stretch; */
+
+        overflow: hidden;
+
+    }
+
+    
+
+    .main-login{
+        transition: all 0.75s ease-in-out;
+
+        img{
+            left: -465px;
+        }
+        
+    }
+
+    .main-register{
+        transition: all 0.75s ease-in-out;
+
+    }
+
+    div.main-form{
+        height: 300px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        
+    }
+
+    div.main-form-register{
+        height: 350px;
+    }
+
+    form{
+        position: relative;
+        left: 24px;
+
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 24px;
+
+        
+
+        input.form-input{
+            font-size: 16px;
+            font-weight: 550;
+
+            padding-block: 18px;
+            padding-inline: 45px;
+            width: 100%;
+    
+            border: none;
+            border-radius: 50px;
+
+            
+            background-color: #ffffff3a;
+            color: #fff;
+            
+            cursor: pointer;
+            outline: none;
+
+            
+            
+        }
+
+        div.div-inputs{
+            position: relative;
+            display: flex;
+            align-items: center;
+            
+            img{
+                left:-465px
+            }
+            
+        }
+
+    
+
+        input.form-input:hover{
+            background-color: #ffffff56;
+            transition-duration: 0.15s;
+            transition-timing-function: ease-in-out;
+        }
+
+        div#name-field{
+            margin-top: 50px;
+            display: flex;
+            flex-flow: row nowrap;
+            
+
+            div{
+                width: 50%;
+            }
+
+            img{
+                left: -210px;
+            }
+        }
+
+        img{
+            position: relative;      
+        }
+        
+
+        button{
+            font-weight: 550;
+
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+
+            font-size: 16px;
+            background-color: #ffffff94;
+            transition: 0.15s ease-in-out;
+            cursor: pointer;
+
+            max-width: 476px;
+        }
+
+        button:hover{
+            background: #ffffffc5;
+        }
+    }
+
+    ::-webkit-input-placeholder{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    
+    
+    
+
+
+
+    .extra-options{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        span{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            gap: 8px;
+
+            text-align: justify;
+        
+        }
+
+        label{
+            color: #fff;
+            
+
+            
+        }
+
+        input#register-check{
+            width: 15px;
+        }
+
+        a{
+            font-size: 14px;
+            font-weight: 400;
+            
+        }
+
+
+    }
+}
